@@ -1,0 +1,72 @@
+
+<div class="card mb-3">
+  <h2 class="card-header">your business</h2>
+  <div class="card-body">
+    <h6 class="card-title">opportunity for your business</h6>
+  </div>
+  <div>
+    <span><%= link_to 'Go to', articles_path %></span>
+  </div>
+  
+   <%= image_tag 'indextop.jpeg', style: "height: 320px; width: 100%; display: block;" %>
+  <div class="card-body">
+    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+  </div>
+</div>
+
+
+
+
+
+
+                <div class="row">
+
+                          <div class="col-xl-4 col-md-6 col-lg-4">
+                                  <div class="single_case">
+                                      <div class="case_thumb">
+                                        <%= image_tag 'sales.png'%>
+                                      </div>
+                                      <div class="case_heading">
+                                        <span>Finance Solution</span>
+                                          <h3><a href="#">Consumer Products Consulting</a></h3>
+                                      </div>
+                                  </div>
+                          </div>
+                          <div class="col-xl-4 col-md-6 col-lg-4">
+                                  <div class="single_case">
+                                      <div class="case_thumb">
+                                      <%= image_tag 'marketing.png'%>
+                                      </div>
+                                      <div class="case_heading">
+                                        <span>Finance Solution</span>
+                                        <h3><a href="#">Consumer Products Consulting</a></h3>
+                                      </div>
+                                  </div>
+                          </div>
+                          <div class="col-xl-4 col-md-6 col-lg-4">
+                                  <div class="single_case">
+                                      <div class="case_thumb">
+                                        <%= image_tag 'support.png'%>
+                                      </div>
+                                      <div class="case_heading">
+                                        <span>Finance Solution</span>
+                                        <h3><a href="#">Consumer Products Consulting</a></h3>
+                                      </div>
+                                  </div>
+                          </div>
+                </div>
+
+
+
+
+
+
+
+ <div class="jumbotron">
+  <% if logged_in? %>
+     <h3 class="display-3">Welcome to your business page, <%= current_user.username %></h3>
+  <%end%>  
+   <%=@articles.count %>
+ </div>  
+
+

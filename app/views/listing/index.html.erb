@@ -1,0 +1,19 @@
+
+
+<div class="jumbotron">
+  <% if logged_in? %>
+    <h3 class="display-3">Welcome to your business page, <%= current_user.username %></h3>
+  <%end%> 
+
+</div>
+
+<h1>Listing Articles</h1>
+<%= link_to 'New article', new_article_path %>
+<table>
+  <tr>
+    <th>Title</th>
+    <th>Text</th>
+    <th colspan="3"></th>
+  </tr>
+  <%= image_tag '' %>
+  <img src="">
